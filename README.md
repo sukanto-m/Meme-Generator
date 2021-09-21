@@ -6,8 +6,7 @@ the computer. It comprises the following components primarily:
 
 ### Quote Engine 
 This folder uses a number of scripts to parse quotes from the following sets of file formats: .txt, .csv, .pdf and .docx. The associated scripts ie Ingestors for each
-file type use a specific library (eg Pandas for CSV) to parse and then the QuoteModel file represents the way the quotes should be read on the memes. The IngestorInterface
-superclass is used for each file except QuoteModel. The QuoteModel file is used to set up certain ingestors to set up the quotes, as well as in the app.py and meme.py scripts.
+file type use a specific library (eg Pandas for CSV) to parse and then the QuoteModel file represents the way the quotes should be read on the memes. The IngestorInterface abstract base class is used for each file except QuoteModel. The QuoteModel file is used to set up certain ingestors to set up the quotes, as well as in the app.py and meme.py scripts.
 
 ### MemeGenerator
 In this folder the MemeEngine.py script grabs an image using the Pillow library and scales it appropriately for the meme. The file also sets up the variables
