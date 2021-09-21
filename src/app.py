@@ -60,7 +60,7 @@ def meme_post():
     image_url = request.form.get('image_url')
     body = request.form.get('body')
     author = request.form.get('author', "No one")
-    image_response = requests.get(path).content
+    image_response = requests.get(image_url).content
     rand_num = random.randint(0, 10000)
     tmp = f'./tmp/{rand_num}.jpg' 
 
